@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+	      <!-- <property name="location">
+	      	<value>children.properties</value>
+	      </property> -->
+	      <property name="locations">
+	      	<list>
+	      		<value>classpath:children.properties</value>
+	      		<value>classpath:logback.properties</value>
+	      	</list>
+	      </property>
+      </bean>
+
+      <bean id="testBean" class="org.peter.test.TestBean" init-method="init">
+          <property name="desc">
+              <value>${peter.children.son}</value>
+          </property>
+      </bean>
+</beans>

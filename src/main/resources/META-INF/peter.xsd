@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.italycappuccino.com/schema/peter"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.italycappuccino.com/schema/peter"
+        elementFormDefault="qualified">
+
+        <xsd:element name="children" type="childrenType">
+        </xsd:element>
+        
+        <xsd:complexType name="childrenType">
+                <xsd:attribute name="id" type="xsd:string">
+                </xsd:attribute>
+                <xsd:attribute name="desc" type="xsd:string">
+                </xsd:attribute>
+        </xsd:complexType>
+
+</xsd:schema>
