@@ -8,6 +8,19 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd"
 	default-autowire="byName">
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+		<!-- 
+		<property name="location">
+			<value>children.properties</value>
+		</property>
+		 -->
+		<property name="locations">
+			<list>
+				<value>classpath:config.properties</value>
+			</list>
+		</property>
+	</bean>
 	<context:annotation-config />
-	<context:component-scan base-package="org.peter.core.product" />
+	<context:component-scan base-package="com.edison.core" />
+
 </beans>

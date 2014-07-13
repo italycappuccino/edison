@@ -1,1 +1,1 @@
-http\://www.italycappuccino.com/schema/peter=org.peter.test.TestNamespaceHandler
+http\://www.italycappuccino.com/schema/family=com.edison.schema.tags.FamilyNamespaceHandler
