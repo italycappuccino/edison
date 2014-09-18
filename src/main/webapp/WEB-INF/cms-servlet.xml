@@ -12,7 +12,7 @@
 
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/>
-	<context:component-scan base-package="org.peter.core" />
+	<context:component-scan base-package="com.edison.core" />
 	<mvc:view-controller path="/" view-name="forward:/index"/>
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

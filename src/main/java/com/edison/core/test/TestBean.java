@@ -1,4 +1,4 @@
-package com.edison.core.product.entity;
+package com.edison.core.test;
 
 import lombok.Data;
 

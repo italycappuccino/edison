@@ -1,1 +1,2 @@
-http\://www.italycappuccino.com/schema/family.xsd=com/edison/schema/xsd/family.xsd
+http\://www.italycappuccino.com/schema/family/family.xsd=META-INF/family.xsd
+http\://www.italycappuccino.com/schema/peter/peter.xsd=META-INF/peter.xsd
