@@ -5,7 +5,7 @@
 	
 	<!-- web.xml 的加载顺序是：context-param -> listener -> filter -> servlet  -->
 
-	<display-name>CMS</display-name>
+	<display-name>Edison</display-name>
 	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -14,11 +14,10 @@
 
 	<context-param>
 		<param-name>contextPath</param-name>
-		<param-value>/cms</param-value>
+		<param-value>/edison</param-value>
 	</context-param>
 
 	<listener>
-		<description>Spring core configuration指定以Listener方式启动Spring容器</description>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
@@ -41,12 +40,12 @@
 	</filter-mapping>
 	
 	<servlet>
-		<servlet-name>cms</servlet-name>
+		<servlet-name>edison</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>cms</servlet-name>
+		<servlet-name>edison</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
