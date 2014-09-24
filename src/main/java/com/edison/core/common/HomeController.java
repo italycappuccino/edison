@@ -38,7 +38,7 @@ public class HomeController {
     @ResponseBody
     public Object queryCountry(HttpServletRequest request, HttpServletResponse response) {
         log.info("queryCountry");
-        response.setContentType("text/html;charset=utf-8");
+        //response.setContentType("text/html;charset=utf-8");
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             String country = request.getParameter("country");
@@ -53,6 +53,7 @@ public class HomeController {
         } catch (Exception e) {
             map.put("success", Boolean.FALSE);
             map.put("Msg", e.getMessage());
+            log.error("query failed. errorMsg=" + e.getMessage());
         }
         log.info("result=" + gson.toJson(map));
         return gson.toJson(map);

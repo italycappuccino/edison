@@ -5,7 +5,7 @@
 	
 	<!-- web.xml 的加载顺序是：context-param -> listener -> filter -> servlet  -->
 
-	<display-name>Edison</display-name>
+	<display-name>edison</display-name>
 	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>

@@ -17,6 +17,10 @@ country:<input type="text" id="country" name="country"/>
 var url = '/demo/country';
 function calc(){
 	$.ajax({url:url, dataType:'json', data:{"country": $("#country").val()}, success:function(data){
+		if(data.success==false){
+			$('#Msg').html(data.Msg);
+			return;
+		}
 		$('#Msg').html(data.count);
 		var html = '';
 		html += '<option value="">请选择</option>';
