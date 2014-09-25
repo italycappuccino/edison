@@ -1,2 +1,2 @@
-http\://www.italycappuccino.com/schema/family=com.edison.schema.tags.FamilyNamespaceHandler
-http\://www.italycappuccino.com/schema/peter=com.edison.schema.tags.PeterNamespaceHandler
+http\://www.italycappuccino.com/schema/family=com.stone.schema.tags.FamilyNamespaceHandler
+http\://www.italycappuccino.com/schema/peter=com.stone.schema.tags.PeterNamespaceHandler

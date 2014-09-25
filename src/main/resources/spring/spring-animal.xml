@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="bird" class="com.edison.core.product.service.impl.Bird"/>
-	<bean id="dog" class="com.edison.core.product.service.impl.Dog"/>
-	<bean id="zoo" class="com.edison.core.product.service.Zoo" init-method="init" destroy-method="destroy">
+	<bean id="bird" class="com.stone.core.product.service.impl.Bird"/>
+	<bean id="dog" class="com.stone.core.product.service.impl.Dog"/>
+	<bean id="zoo" class="com.stone.core.product.service.Zoo" init-method="init" destroy-method="destroy">
 		<property name="animal" ref="dog"/>
 		<property name="all">
 			<list>
