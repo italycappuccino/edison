@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+      <bean id="testBean" class="com.stone.core.test.TestBean" init-method="init">
+          <property name="desc">
+              <value>${peter.children.son}</value>
+          </property>
+      </bean>
+</beans>

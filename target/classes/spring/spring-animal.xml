@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="bird" class="com.stone.core.product.service.impl.Bird"/>
+	<bean id="dog" class="com.stone.core.product.service.impl.Dog"/>
+	<bean id="zoo" class="com.stone.core.product.service.Zoo" init-method="init" destroy-method="destroy">
+		<property name="animal" ref="dog"/>
+		<property name="all">
+			<list>
+				<value>aa1</value>
+				<value>bb2</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
