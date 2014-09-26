@@ -44,6 +44,7 @@ public class SpringTest extends AbstractJUnit4SpringContextTests {
         System.out.println(this.getBean("Peter"));
     }
 
+    @SuppressWarnings("rawtypes")
     @Test
     public void empty() {
         Collection collection = new ArrayList();
@@ -70,6 +71,15 @@ public class SpringTest extends AbstractJUnit4SpringContextTests {
     @Test
     public void peter() {
         System.out.println(this.getBean("Peter"));
+    }
+
+    @Test
+    public void tag() {
+        TestBean edison = (TestBean) this.getBean("edison");
+        System.out.println(edison);
+
+        TestBean lusa = (TestBean) this.getBean("lusa");
+        System.out.println(lusa);
     }
 
 }

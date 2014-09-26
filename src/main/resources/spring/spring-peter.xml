@@ -7,4 +7,5 @@
         http://www.italycappuccino.com/schema/peter http://www.italycappuccino.com/schema/peter/peter.xsd" 
 	default-autowire="byName">
 	<peter:children id="edison" desc="peter has a son,his name is edison." />
+	<peter:children id="lusa" desc="peter has a girl,her name is lusa." />
 </beans>

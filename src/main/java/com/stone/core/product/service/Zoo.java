@@ -12,23 +12,25 @@ import lombok.Data;
  * @create 2014年7月13日
  * @TODO
  */
-public @Data class Zoo {
-	
-	private Animal animal;
-	
-	private List all;
-	
-	public void add(){
-		System.out.println("the animal is in the zoo and ");
-		animal.info();
-	}
-	
-	public void init(){
-		System.out.println("====zoo init");
-	}
-	
-	public void destroy(){
-		System.out.println("====zoo destroy");
-	}
+public @Data
+class Zoo {
+
+    private Animal animal;
+
+    @SuppressWarnings("rawtypes")
+    private List   all;
+
+    public void add() {
+        System.out.println("the animal is in the zoo and ");
+        animal.info();
+    }
+
+    public void init() {
+        System.out.println("====zoo init");
+    }
+
+    public void destroy() {
+        System.out.println("====zoo destroy");
+    }
 
 }
