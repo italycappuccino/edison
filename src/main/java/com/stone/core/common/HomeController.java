@@ -29,10 +29,10 @@ public class HomeController {
     @Resource
     private CountryService      countryService;
 
-    @RequestMapping("/index")
-    public String index() {
-        return "index";
-    }
+//    @RequestMapping("/index")
+//    public String index() {log.info("aaaaaa");
+//        return "index";
+//    }
 
     @RequestMapping(value = "/demo/country", method = RequestMethod.GET, produces = "text/html;charset=UTF-8")
     @ResponseBody
